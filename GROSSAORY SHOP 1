@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+
+{
+
+    int A4sheet,Pen,Pencil,Eraser;
+
+    scanf("%d%d%d%d",&A4sheet,&Pen,&Pencil,&Eraser);
+
+    printf("Items Details\n");
+
+    printf("A4sheet:%d\n",A4sheet);
+
+    printf("Pen:%d\n",Pen);
+
+    printf("Pencil:%d\n",Pencil);
+
+    printf("Eraser:%d\n",Eraser);
+
+    return 0;
+
+}
