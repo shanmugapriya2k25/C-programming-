@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main(void)
+
+{
+
+    char name[50];
+
+    int arrears;
+
+    int cgpa;
+
+
+    if (scanf("%49s", name) != 1) return 0;   
+
+    if (scanf("%d", &arrears) != 1) return 0;
+
+    if (scanf("%d", &cgpa) != 1) return 0;   
+
+
+    int eligible = 0;
+
+    if ((arrears == 1 && cgpa > 70) ||                    
+        ((arrears == 1 || arrears == 2) && cgpa > 75))   
+
+    {
+
+        eligible = 1;
+
+    }
+
+    printf("Name of the Student:%s\n", name);
+
+    if (eligible)
+
+        printf("%s is Eligible for Placement\n", name);
+
+    else
+
+        printf("%s is Not Eligible for Placement\n", name);
+
+    return 0;
+
+}
