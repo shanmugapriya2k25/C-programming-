@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <math.h>
+
+int main()
+
+{
+
+    float num;
+
+    scanf("%f",&num);
+
+    printf("%.6f\n",num);
+
+    printf("%.4f\n",num);
+
+    printf("%.2f\n",num);
+
+    printf("%.0f\n",round(num));
+
+    return 0;
+
+}
