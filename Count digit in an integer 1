@@ -1,0 +1,65 @@
+#include <stdio.h>
+
+int main() 
+
+{
+
+    long long num; 
+
+    int count = 0;
+
+    scanf("%lld", &num);
+
+    if (num < 1 || num > 1000000000) 
+
+    {
+
+        printf("Enter a Valid Input\n");
+
+        return 0;
+
+    }
+
+     if (num == 0)
+
+     {
+
+        count = 1;
+
+      } else 
+
+    {
+
+     }
+
+    long long temp_num = num; 
+
+    if (temp_num == 0) 
+
+    { 
+
+        count = 1;
+
+    }
+
+    else
+
+    {
+
+        while (temp_num > 0)
+
+        {
+
+            temp_num /= 10; 
+
+            count++;        
+
+        }
+
+    }
+
+    printf("The count of the given integer is: %d\n", count);
+
+    return 0;
+
+}
